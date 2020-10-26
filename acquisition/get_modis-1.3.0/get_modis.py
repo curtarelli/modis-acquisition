@@ -175,7 +175,7 @@ def get_modisfiles ( platform, product, year, tile, proxy, doy_start=1, doy_end 
                         local_file_size = os.path.getsize(os.path.join( out_dir, fname ) )
                         if remote_file_size != local_file_size:
                             download = True
-                            print "Re-downloading file " + fname + "as sizes do not match"
+                            print("Re-downloading file " + fname + "as sizes do not match")
                         
                     if download:
                         if verbose:
